@@ -9,8 +9,7 @@
 </p>
 
 <p align="center">
-  <!-- Live Demo URL placeholder: Replace with your deployed Streamlit URL -->
-  <a href="https://historgram-enhancement-studio.streamlit.app">Live Demo</a>
+  <a href="https://histogram-enhancement-studio.streamlit.app">Live Demo</a>
   &nbsp;·&nbsp;
   <a href="https://github.com/idabagusweda/historgram-enhancement-studio/issues">Report an Issue</a>
 </p>
@@ -30,6 +29,8 @@
 Histogram Enhancement Studio is an interactive digital image processing application designed to visualize, analyze, and enhance digital image quality through intensity distribution manipulation. The studio implements modular image enhancement workflows, separating user interface orchestration, image preprocessing, enhancement algorithms, histogram analytics, objective quality metrics, heuristic recommendation, and export services.
 
 The application features CIE LAB color space enhancement to prevent hue shifts during contrast expansion, as well as classic grayscale point operations. Users can interactively compare Before/After states with crop minimaps, inspect distribution shifts via Altair histograms and CDF graphs, examine objective metrics, and obtain algorithmic recommendations based on image statistical properties.
+
+A live deployment is available at [histogram-enhancement-studio.streamlit.app](https://histogram-enhancement-studio.streamlit.app).
 
 ## Features
 
