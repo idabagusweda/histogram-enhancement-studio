@@ -1,0 +1,21 @@
+[client]
+toolbarMode = "viewer"
+
+[theme]
+base = "light"
+font = "'Plus Jakarta Sans':https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+baseRadius = "8px"
+
+[theme.light]
+primaryColor = "#1D4ED8"
+backgroundColor = "#F8FAFC"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#0F172A"
+borderColor = "#E2E8F0"
+
+[theme.dark]
+primaryColor = "#3B82F6"
+backgroundColor = "#0F172A"
+secondaryBackgroundColor = "#1E293B"
+textColor = "#F8FAFC"
+borderColor = "#334155"
