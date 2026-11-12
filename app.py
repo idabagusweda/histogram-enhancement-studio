@@ -59,7 +59,8 @@ from modules.recommendation import recommend_methods
 # ==============================================================================
 
 st.set_page_config(
-    page_title="Image Enhancement Studio",
+    page_title="Histogram Enhancement Studio",
+    page_icon="assets/logo.png",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -208,6 +209,7 @@ def set_crop_shortcut(target_type: str, w: int, h: int, win: int, gray_orig: np.
 # ==============================================================================
 
 with st.sidebar:
+    st.image("assets/logo.png", width=110)
     st.subheader("Berkas Masukan")
 
     uploaded_file = st.file_uploader(
@@ -340,13 +342,15 @@ with st.sidebar:
 status_label = "Mode: Color LAB" if processing_mode == "Color Enhancement" else "Mode: Grayscale"
 status_color = "primary" if processing_mode == "Color Enhancement" else "gray"
 
-col_head_title, col_head_badge = st.columns([0.84, 0.16])
+col_head_logo, col_head_title, col_head_badge = st.columns([0.08, 0.76, 0.16])
+with col_head_logo:
+    st.image("assets/logo.png", width=56)
 with col_head_title:
-    st.title("Image Enhancement Studio", anchor=False)
+    st.title("Histogram Enhancement Studio", anchor=False)
 with col_head_badge:
     st.badge(status_label, color=status_color)
 
-st.caption("Laboratorium Pengolahan Citra Digital: Operasi Titik dan Modifikasi Histogram")
+st.caption("Interactive Digital Image Processing Studio: Point Operations and Histogram Enhancement")
 
 
 # ==============================================================================
@@ -355,9 +359,9 @@ st.caption("Laboratorium Pengolahan Citra Digital: Operasi Titik dan Modifikasi 
 
 if active_file is None:
     with st.container(border=True):
-        st.subheader("Panduan Penggunaan Laboratorium")
+        st.subheader("Panduan Penggunaan Studio")
         st.write(
-            "Aplikasi ini menyediakan laboratorium interaktif untuk menganalisis karakteristik "
+            "Aplikasi ini menyediakan antarmuka interaktif untuk menganalisis karakteristik "
             "citra dan menerapkan metode peningkatan kualitas citra berbasis transformasi titik "
             "dan modifikasi histogram."
         )

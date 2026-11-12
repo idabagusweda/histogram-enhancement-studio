@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/sample_test.png" alt="Histogram Enhancement Studio" width="180" />
+  <img src="./assets/logo.png" alt="Histogram Enhancement Studio" width="180" />
 </p>
 
 <h1 align="center">Histogram Enhancement Studio</h1>
@@ -133,8 +133,9 @@ Not applicable. The application does not rely on serverless edge functions or re
 ## Project Structure
 
 ```text
-historgram-enhancement-studio/
-├── assets/                     # Sample images for testing and demonstration
+histogram-enhancement-studio/
+├── assets/                     # Static assets and sample images
+│   ├── logo.png                # Studio logo mark
 │   ├── sample_reference.png    # Target reference image for histogram matching
 │   └── sample_test.png         # Input image for quick preview and verification
 ├── modules/                    # Modular image processing and analysis backend
